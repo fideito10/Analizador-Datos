@@ -1,12 +1,27 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import streamlit as st
-import plotly.express as px
-import plotly.graph_objects as go
+
+# Importar plotly de manera segura
+try:
+    import plotly.express as px
+    import plotly.graph_objects as go
+except ImportError:
+    st.error("Error: plotly no está instalado correctamente")
+
+# Importar módulos locales
 from modulos.cargararchivo import cargar_csv, filtrar_datos
-from modulos.graficos import generar_grafico_barras, generar_radar_chart, generar_grafico_dispersion
-from modulos.Reporte import (preparar_datos,generar_reporte_completo, entrenar_modelo_simplificado, obtener_importancia_variables)
+from modulos.graficos import (
+    generar_grafico_barras, 
+    generar_radar_chart, 
+    generar_grafico_dispersion
+)
+from modulos.Reporte import (
+    preparar_datos,
+    generar_reporte_completo, 
+    entrenar_modelo_simplificado, 
+    obtener_importancia_variables
+)
 from modulos.principal import mostrar_pagina_principal
 
 

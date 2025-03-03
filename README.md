@@ -27,10 +27,12 @@ Final/
 │
 ├── .streamlit/
 │   └── config.toml
-├── modulos/
-│   ├── __init__.py
-│   ├── principal.py
-│   └── Reporte.py
+└── modulos/
+    ├── __init__.py
+    ├── principal.py
+    ├── Reporte.py
+    ├── graficos.py
+    └── cargararchivo.py 
 ├── main.py
 ├── requirements.txt
 └── README.md
