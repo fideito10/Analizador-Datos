@@ -4,4 +4,5 @@ numpy==1.26.3
 plotly==5.18.0
 scikit-learn==1.4.0
 openpyxl==3.1.2
-# transformers  # Solo si realmente necesitas esta librería
+transformers==4.36.2
+torch==2.1.2
