@@ -1,23 +1,9 @@
 import streamlit as st
 
 def mostrar_pagina_principal():
-    # Configuración del tema verde oscuro
+    # Solo mantiene el logo y oculta el footer
     st.markdown("""
         <style>
-        .main {
-            background-color: #1e3d2f;
-            color: white;
-        }
-        .stButton>button {
-            background-color: #2c5a44;
-            color: white;
-        }
-        .stExpander {
-            background-color: #2c5a44;
-        }
-        .css-1d391kg {
-            background-color: #1e3d2f;
-        }
         footer {
             visibility: hidden;
         }
@@ -25,7 +11,6 @@ def mostrar_pagina_principal():
             position: fixed;
             right: 20px;
             bottom: 20px;
-            color: #4CAF50;
             font-size: 18px;
             font-weight: bold;
             font-style: italic;
@@ -58,8 +43,6 @@ def mostrar_pagina_principal():
     - Descargas ágiles en múltiples formatos
     - Memoria de configuraciones para mantener tus preferencias
     """)
-    
- 
     
     # Logo Juan Calvo
     st.markdown("""
